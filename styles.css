@@ -1,0 +1,13 @@
+body {background:#000;}
+#main-container {
+	height:95%;
+	padding:100px;
+	width:50%;
+	margin: 0 auto;
+	text-align:center;
+}
+#main-container img {width:75%;}
+h1 {
+   color: #ff4200;
+}
+p, ul li, ol li {color:#ddd;}
