@@ -5,22 +5,59 @@ body {
 }
 
 #main-container img {
-	height: 35%;
-	padding: 40px;
-	width: 20%;
-	margin: auto;
+	padding: 0;
+	height: auto;
+	margin: 0 auto;
 	text-align: center;
 	align-content: center;
+}
+
+@media (max-width:359px) {
+    #main-container img {
+        width: 80%;
+		max-width: 300px;
+	}
+}
+@media (min-width:360px) and (max-width:575px) {
+	#main-container img {
+		max-width: 500px;
+		width: 60%;
+	}
+}
+@media (min-width:576px) and (max-width:767px) {
+	#main-container img {
+		max-width: 450px;
+		width: 50%;
+	}
+}
+@media (min-width:768px) and (max-width:1000px) {
+	#main-container img {
+		max-width: 450px;
+		width: 40%;
+	}
+}
+@media (min-width:1001px) and (max-width:1200px) {
+	#main-container img {
+		max-width: 450px;
+		width: 30%;
+	}
+}
+@media (min-width:1200px) {
+	#main-container img {
+		max-width: 450px;
+		width: 20%;
+	}
 }
 
 
 h1 {
    color: #EF4623;
-   margin: auto;
+   margin: 2% auto 0 auto;
 }
 h2 {
 	color:#ddd;
-	margin-top: 45px;
+	margin: 1% auto 1rem auto;
+	font-weight: 400;
 }
 
 button {
@@ -30,13 +67,14 @@ button {
   color: #000;
   font-weight: bold;
   border-radius: 10px;
-  padding: 10px 20px;
-  margin-top: 45px;
+  padding: 1rem 2rem;
+  margin: 0;
   transition: background 0.3s;
 }
 button:hover {
   background-color: #EF4623;
   color: #ddd;
+  transform: scale(1.05);
 }
 
 button:active {
@@ -44,8 +82,10 @@ button:active {
 }
 
 .footer {
+	width: 100%;
 	position: fixed;
 	bottom: 5px;
-	left: 40%;
+	left: 50%;
+	transform: translateX(-50%);
 	color: #ddd;
 }
