@@ -1,7 +1,7 @@
 body {
 	background: #000;
 	text-align: center;
-	align-content: center;
+	align-content: center; 
 }
 
 #main-container img {
@@ -64,19 +64,46 @@ p {
 	color: #ddd;
 }
 
-
-/*
 #services div {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly; 
-	margin: 45px;
+	align-items: center;
 }
-	*/
+
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	max-width: 80%;
+	position: relative;
+	left: 13%;
+	}
+
+
+
+	.card {
+		margin: 10px;
+		padding: 5px;
+		border: 2px solid #ddd;
+		border-radius: 5px;
+	}
+
 span {
 	color: #ddd;	
-	font-weight: Bold;
+	font-weight: bold;
 }
+
+   #about-us {
+	width: 30%;
+	position: relative;
+	left: 35%;
+   }
+
+    .contact {
+		width: 20%;
+		position: relative;
+		left: 40%
+	}
 
 button {
   appearance: none;
