@@ -51,7 +51,7 @@ body {
 
 
 h1 {
-   color: #EF4623;
+   color: #b4201d;
    margin: 2% auto 0 auto;
 }
 h2 {
@@ -60,10 +60,28 @@ h2 {
 	font-weight: 400;
 }
 
+p {
+	color: #ddd;
+}
+
+
+/*
+#services div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly; 
+	margin: 45px;
+}
+	*/
+span {
+	color: #ddd;	
+	font-weight: Bold;
+}
+
 button {
   appearance: none;
-  background-color: #EF4623;
-  border: 2px solid #ff4623;
+  background-color: #b4201d;
+  border: 2px solid #b4201d;
   color: #000;
   font-weight: bold;
   border-radius: 10px;
@@ -72,7 +90,7 @@ button {
   transition: background 0.3s;
 }
 button:hover {
-  background-color: #EF4623;
+  background-color: #b4201d;
   color: #ddd;
   transform: scale(1.05);
 }
