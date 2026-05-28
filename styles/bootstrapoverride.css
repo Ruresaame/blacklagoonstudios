@@ -45,6 +45,14 @@
   background-color: #b4201d;
 }
 
+.bg-red {
+  background-color: #b4201d;
+}
+
+.text-white {
+  color: #fff;
+}
+
 .border-primary1 {
   border-color: #b4201d;
 }
