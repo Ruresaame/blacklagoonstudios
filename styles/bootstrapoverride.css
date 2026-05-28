@@ -1,0 +1,50 @@
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #b4201d;
+}
+
+.nav-link {
+   color: #b4201d;
+}
+
+.nav-link:hover {
+   color: #fff;
+}
+
+.bi {
+   color: #b4201d;
+}
+.btn {
+  appearance: none;
+  background-color: #b4201d;
+  border: 2px solid #b4201d;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b4201d;
+  border: 2px solid #b4201d;
+  color: #ddd;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.border-primary1 {
+   border-color: #b4201d;
+}
+
+.text-bg-primary1 {
+  color: #fff !important;
+  background-color: #b4201d;
+}
+
+.border-primary1 {
+  border-color: #b4201d;
+}
