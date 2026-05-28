@@ -14,24 +14,24 @@
     </style>
   </head>
   <body>
-    <div class="px-4 py-5 text-center">
+    <header class="px-4 py-5 text-center">
         <img class="d-block mx-auto mb-4" src="./images/BLS_ship_round.png" alt="" width="200" height="auto">
         <h1 class="display-5 fw-bold text-body-emphasis">Navigating The Complexities of Growth</h1>
-        <header class="col-lg-6 mx-auto">
+        <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">We are a full-service marketing agency with digital and print capabilities to provide custom solutions for your unique business, using enterprise-grade technologies with scaling strategies to promote advancement at all stages. As e-commerce specialists, our services are flexible and cost-effective options for growing your digital presence and generating online revenue.</p>
-        </header>
-        <div class="d-flex justify-content-center py-3">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
-            </ul>
         </div>
-    </div>
+    </header>
+    <nav class="d-flex justify-content-center py-3 navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active text-bg-primary1" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
     <a name="services"></a>
-    <div class="container px-4 py-0" id="icon-grid">
+    <div class="container px-4 py-3" id="icon-grid">
         <h2 class="pb-2 border-bottom text-center">Services</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
             <div class="col d-flex align-items-start">
@@ -368,6 +368,11 @@
             </ul>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" 
+        integrity="sha384-H5SrcfygHmAuTDZphMHqBJLc3FhssKjG7w/CeCpFReSfwBWDTKpkzPP8c+cLsK+V" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.9"
+        crossorigin="anonymous"></script>
   </body>
 </html>
