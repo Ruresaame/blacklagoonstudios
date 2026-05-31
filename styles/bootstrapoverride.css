@@ -53,6 +53,14 @@
   color: #fff;
 }
 
+.text-red {
+  color: #b4201d;
+}
+
 .border-primary1 {
   border-color: #b4201d;
+}
+
+.border-top-red {
+  border-top: 1px solid #b4201d;
 }
