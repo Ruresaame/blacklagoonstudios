@@ -201,6 +201,113 @@
                 </div>
             </div>
         </div>
+        <!--<div class="row">
+            <h3 class="display-6 text-center mb-4">Compare plans</h2>
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">Core Performance</th>
+                            <th style="width: 22%;">Dynamic Storefront</th>
+                            <th style="width: 22%;">Enterprise Architecture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Website</th>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-primary"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check bi-red"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-success"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Storefront</th>
+                            <td></td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check bi-red"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-success"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Permissions</th>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-primary"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check bi-red"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-success"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Sharing</th>
+                            <td></td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check bi-red"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-success"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Unlimited members</th>
+                            <td></td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-success"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="bi" width="24" height="24" role="img" aria-label="Included">
+                                    <i class="bi bi-check text-success"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>-->
         <hr class="text-red" style="margin: 4rem 0 0 0;" />
     </div>
     <a name="about"></a>
@@ -276,6 +383,13 @@
                 <span class="mb-3 mb-md-0 text-body-emphasis">Copyright 2014-2026 © Black Lagoon Studios</span>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <!--<li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="Instagram">
+                        <div class="badge bg-red" width="24" height="24" aria-hidden="true">
+                            <i class="bi bi-instagram text-white"></i>
+                        </div>
+                    </a>
+                </li>-->
                 <li class="ms-3">
                     <a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=61590498718463" target="_blank" aria-label="Facebook">
                         <div class="badge bg-red" width="24" height="24">
@@ -283,6 +397,13 @@
                         </div>
                     </a>
                 </li>
+                <!--<li class="ms-3">
+                    <a class="text-body-secondary" href="#" aria-label="Facebook">
+                        <div class="badge bg-red" width="24" height="24">
+                            <i class="bi bi-linkedin text-white"></i>
+                        </div>
+                    </a>
+                </li>-->
             </ul>
         </footer>
     </div>
@@ -312,16 +433,21 @@
         
         window.addEventListener('scroll', () => {
             let current = '';
+        
+            // Check which section is in viewport
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 100)) {
+                // If scroll position is within the section, set current to section ID
+                if (pageYOffset >= (sectionTop - 100)) { // -100 for offset
                     current = section.getAttribute('id');
                 }
             });
+        
+            // Update active nav link based on current section
             navLinks.forEach(link => {
             link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
+                if (link.getAttribute('href') === `#${current}`) { // Match href with section ID
                     link.classList.add('active');
                 }
             });

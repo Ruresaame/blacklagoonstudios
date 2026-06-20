@@ -51,7 +51,7 @@ body {
 
 
 h1 {
-   color: #EF4623;
+   color: #b4201d;
    margin: 2% auto 0 auto;
 }
 h2 {
@@ -60,10 +60,44 @@ h2 {
 	font-weight: 400;
 }
 
+p {
+	color: #ddd;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	max-width: 80%;
+	position: relative;
+	left: 13%;
+	}
+
+.card-one {
+	position: relative;
+	left: 27%;
+}
+
+
+.card {
+	width: 45%;
+	margin: 10px;
+	padding: 5px;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	}
+
+span {
+	color: #ddd;	
+	font-weight: Bold;
+}
+
 button {
   appearance: none;
-  background-color: #EF4623;
-  border: 2px solid #ff4623;
+  background-color: #b4201d;
+  border: 2px solid #b4201d;
   color: #000;
   font-weight: bold;
   border-radius: 10px;
@@ -72,7 +106,7 @@ button {
   transition: background 0.3s;
 }
 button:hover {
-  background-color: #EF4623;
+  background-color: #b4201d;
   color: #ddd;
   transform: scale(1.05);
 }

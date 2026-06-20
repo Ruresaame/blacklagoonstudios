@@ -1,0 +1,142 @@
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #b4201d;
+}
+
+.nav-link {
+   color: #b4201d;
+}
+
+.nav-link:hover {
+   color: #fff;
+}
+
+.bi {
+   color: #b4201d;
+}
+.btn {
+  appearance: none;
+  background-color: #b4201d;
+  border: 2px solid #b4201d;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b4201d;
+  border: 2px solid #b4201d;
+  color: #ddd;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.border-primary1 {
+   border-color: #b4201d;
+}
+
+.text-bg-primary1 {
+  color: #fff !important;
+  background-color: #b4201d;
+}
+
+.bg-red {
+  background-color: #b4201d;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-red {
+  color: #b4201d;
+}
+
+.border-primary1 {
+  border-color: #b4201d;
+}
+
+.border-top-red {
+  border-top: 1px solid #b4201d;
+}
+
+.text-justify {
+  text-align: justify;
+}
+.img-thumbnail {
+  max-width:140px;
+  max-height:auto;
+}
+
+/* Container for the profile image and overlay */
+.profile-card {
+  position: relative;
+  width: 140px; /* Adjust to fit your layout */
+  height: 140px; /* Adjust to fit your layout */
+  border-radius: 50%; /* Optional: rounds the corners */
+  overflow: hidden; /* Keeps the overlay from spilling outside the corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the image fills the container nicely */
+.profile-img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* The dark overlay overlay that links to LinkedIn */
+.linkedin-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b4201d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
+  /* Initial hidden state */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* The text inside the overlay */
+.overlay-text {
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 10px 20px;
+  
+  /* Subtle slide-in effect */
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+/* --- Hover Effects --- */
+
+/* Reveal the background overlay */
+.profile-card:hover .linkedin-overlay {
+  opacity: 1;
+}
+
+/* Slide the text into its perfect center position */
+.profile-card:hover .overlay-text {
+  transform: translateY(0);
+}
+
+/* Optional: Slight zoom on the profile photo for extra depth */
+.profile-card:hover .profile-img {
+  /* transform: scale(1.05); */
+}
